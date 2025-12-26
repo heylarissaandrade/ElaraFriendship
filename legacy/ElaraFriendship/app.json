@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "Elara",
+    "slug": "elara",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "elara",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.elara.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Elara usa a sua localização para encontrar amigas próximas e para funcionalidades de segurança.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Elara usa a sua localização para funcionalidades de segurança, mesmo quando a app está em segundo plano.",
+        "NSContactsUsageDescription": "Elara precisa de acesso aos seus contactos para adicionar contactos de emergência."
+      }
+    },
+    "android": {
+      "package": "com.elara.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#8B7AB8",
+        "foregroundImage": "./assets/images/icon.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "READ_CONTACTS"
+      ]
+    },
+    "web": {
+      "output": "single",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#FAFAFF",
+          "dark": {
+            "backgroundColor": "#1A1A24"
+          }
+        }
+      ],
+      "expo-web-browser"
+    ],
+    "experiments": {
+      "reactCompiler": true
+    }
+  }
+}
