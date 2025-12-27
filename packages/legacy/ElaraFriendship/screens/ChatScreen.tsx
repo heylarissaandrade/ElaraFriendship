@@ -1,37 +1,26 @@
-import React, { useState, useRef, useEffect } from "react";
+import { Feather } from "@expo/vector-icons";
+import type { RouteProp } from "@react-navigation/native";
+import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import * as Haptics from "expo-haptics";
+import { useEffect, useRef, useState } from "react";
 import {
-  StyleSheet,
-  View,
-  TextInput,
-  Pressable,
-  FlatList,
-  KeyboardAvoidingView,
-  Platform,
+    FlatList,
+    KeyboardAvoidingView,
+    Platform,
+    Pressable,
+    StyleSheet,
+    TextInput,
+    View,
 } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { Feather } from "@expo/vector-icons";
-import * as Haptics from "expo-haptics";
-import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
-import type { RouteProp } from "@react-navigation/native";
 
-import { ThemedView } from "@shared/components/themed-view";
-import { ThemedText } from "@shared/components/themed-text";
 import { EmojiPicker } from "@shared/components/EmojiPicker";
-import {
-  SharePathModal,
-  SafetyCheckInModal,
-  SafetyModeButtons,
-  TrackingBanner,
-} from "@shared/components/SafetyModeModal";
-import {
-  InviteModal,
-  InviteBanner,
-  MessageLimitBanner,
-} from "@shared/components/InviteModal";
-import { useTheme } from "@shared/hooks/useTheme";
-import { useMatches, Message, SafetyFlag, ConnectionIntent } from "@shared/contexts/MatchesContext";
+import { ThemedText } from "@shared/components/themed-text";
+import { ThemedView } from "@shared/components/themed-view";
+import { BorderRadius, ElaraColors, Spacing, Typography } from "@shared/constants/theme";
 import { useAuth } from "@shared/contexts/AuthContext";
-import { Spacing, BorderRadius, ElaraColors, Typography } from "@shared/constants/theme";
+import { ConnectionIntent, Message, SafetyFlag, useMatches } from "@shared/contexts/MatchesContext";
+import { useTheme } from "@shared/hooks/useTheme";
 
 type ConnectionsStackParamList = {
   ConnectionsList: undefined;
@@ -61,9 +50,6 @@ export default function ChatScreen({ route }: ChatScreenProps) {
   } = useMatches();
   const { user } = useAuth();
   const [inputText, setInputText] = useState("");
-  const [showSharePathModal, setShowSharePathModal] = useState(false);
-  const [showCheckInModal, setShowCheckInModal] = useState(false);
-  const [showInviteModal, setShowInviteModal] = useState(false);
   const [showEmojiPicker, setShowEmojiPicker] = useState(false);
   const flatListRef = useRef<FlatList>(null);
   const inputRef = useRef<TextInput>(null);
@@ -104,7 +90,7 @@ export default function ChatScreen({ route }: ChatScreenProps) {
 
   const handleEndTracking = () => {
     endMeetupTracking(connectionId);
-    setShowCheckInModal(true);
+    // setShowCheckInModal(true); // TODO: Implement safety check in modal
   };
 
   const handleSafetyFlagSubmit = (flag: SafetyFlag) => {
@@ -180,7 +166,7 @@ export default function ChatScreen({ route }: ChatScreenProps) {
 
   return (
     <ThemedView style={styles.container}>
-      <TrackingBanner connection={connection} onEndTracking={handleEndTracking} />
+      {/* TODO: Add tracking banner */}
 
       <KeyboardAvoidingView
         style={styles.keyboardView}
@@ -198,22 +184,9 @@ export default function ChatScreen({ route }: ChatScreenProps) {
           ]}
           ListHeaderComponent={
             <>
-              <SafetyModeButtons
-                connection={connection}
-                onSharePath={() => setShowSharePathModal(true)}
-                onCheckIn={() => setShowCheckInModal(true)}
-                isTracking={isTracking}
-              />
-              <InviteBanner
-                connection={connection}
-                onAccept={handleAcceptInvite}
-                onDecline={handleDeclineInvite}
-              />
-              <MessageLimitBanner
-                connection={connection}
-                onInvite={() => setShowInviteModal(true)}
-                messagesRemaining={messagesRemaining}
-              />
+              {/* TODO: Add safety mode components */}
+              {/* TODO: Add invite banner */}
+              {/* TODO: Add message limit banner */}
             </>
           }
           ListEmptyComponent={renderEmptyChat}
@@ -244,7 +217,7 @@ export default function ChatScreen({ route }: ChatScreenProps) {
             ]}
           >
             <Pressable
-              onPress={() => setShowInviteModal(true)}
+              onPress={() => {/* setShowInviteModal(true); */}} // TODO: Implement invite modal
               style={[styles.inviteButton, { backgroundColor: theme.backgroundSecondary }]}
             >
               <Feather name="calendar" size={20} color={ElaraColors.primary} />
@@ -300,26 +273,9 @@ export default function ChatScreen({ route }: ChatScreenProps) {
         </View>
       </KeyboardAvoidingView>
 
-      <SharePathModal
-        visible={showSharePathModal}
-        onClose={() => setShowSharePathModal(false)}
-        connection={connection}
-        onStartTracking={handleStartTracking}
-      />
-
-      <SafetyCheckInModal
-        visible={showCheckInModal}
-        onClose={() => setShowCheckInModal(false)}
-        connection={connection}
-        onSubmit={handleSafetyFlagSubmit}
-      />
-
-      <InviteModal
-        visible={showInviteModal}
-        onClose={() => setShowInviteModal(false)}
-        connection={connection}
-        onSendInvite={handleSendInvite}
-      />
+      {/* TODO: Add share path modal */}
+      {/* TODO: Add safety check in modal */}
+      {/* TODO: Add invite modal */}
     </ThemedView>
   );
 }
