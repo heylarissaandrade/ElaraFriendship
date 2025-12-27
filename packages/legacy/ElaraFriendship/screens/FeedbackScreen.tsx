@@ -20,10 +20,10 @@ import Animated, {
 import * as Haptics from "expo-haptics";
 import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
-import { ScreenKeyboardAwareScrollView } from "@/components/ScreenKeyboardAwareScrollView";
+import { ScreenKeyboardAwareScrollView } from "@shared/components/ScreenKeyboardAwareScrollView";
 import { ThemedText } from "@shared/components/themed-text";
 import { ThemedView } from "@shared/components/themed-view";
-import Spacer from "@/components/Spacer";
+import Spacer from "@shared/components/Spacer";
 import { useTheme } from "@shared/hooks/useTheme";
 import { Spacing, BorderRadius, ElaraColors } from "@shared/constants/theme";
 

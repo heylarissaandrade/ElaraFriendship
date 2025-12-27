@@ -31,18 +31,18 @@ import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
 import { ThemedView } from "@shared/components/themed-view";
 import { ThemedText } from "@shared/components/themed-text";
-import { Button } from "@/components/Button";
-import Spacer from "@/components/Spacer";
+import { Button } from "@shared/components/Button";
+import Spacer from "@shared/components/Spacer";
 import { useTheme } from "@shared/hooks/useTheme";
 import { useMatches, WalkRequest, WalkParticipant, WalkTag } from "@shared/contexts/MatchesContext";
 import { useAuth } from "@shared/contexts/AuthContext";
 import { Spacing, BorderRadius, ElaraColors, Typography } from "@shared/constants/theme";
 
-import { WalkSegmentedControl } from "@/components/walks/WalkSegmentedControl";
-import { WalkFiltersChips, WalkFilterTag } from "@/components/walks/WalkFiltersChips";
-import { WalkCard } from "@/components/walks/WalkCard";
-import { SafetyBanner, ActiveTrackingBanner } from "@/components/walks/SafetyBanner";
-import { LocationPermissionCard } from "@/components/walks/LocationPermissionCard";
+import { WalkSegmentedControl } from "@shared/components/walks/WalkSegmentedControl";
+import { WalkFiltersChips, WalkFilterTag } from "@shared/components/walks/WalkFiltersChips";
+import { WalkCard } from "@shared/components/walks/WalkCard";
+import { SafetyBanner, ActiveTrackingBanner } from "@shared/components/walks/SafetyBanner";
+import { LocationPermissionCard } from "@shared/components/walks/LocationPermissionCard";
 
 type WalkTogetherParamList = {
   WalkTogether: undefined;

@@ -13,11 +13,11 @@ import { Feather } from "@expo/vector-icons";
 import * as Haptics from "expo-haptics";
 import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
-import { ScreenScrollView } from "@/components/ScreenScrollView";
+import { ScreenScrollView } from "@shared/components/ScreenScrollView";
 import { ThemedView } from "@shared/components/themed-view";
 import { ThemedText } from "@shared/components/themed-text";
-import { Button } from "@/components/Button";
-import Spacer from "@/components/Spacer";
+import { Button } from "@shared/components/Button";
+import Spacer from "@shared/components/Spacer";
 import { useTheme } from "@shared/hooks/useTheme";
 import { useAuth } from "@shared/contexts/AuthContext";
 import { Spacing, BorderRadius, ElaraColors } from "@shared/constants/theme";

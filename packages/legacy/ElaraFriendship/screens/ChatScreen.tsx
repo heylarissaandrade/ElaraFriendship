@@ -16,18 +16,18 @@ import type { RouteProp } from "@react-navigation/native";
 
 import { ThemedView } from "@shared/components/themed-view";
 import { ThemedText } from "@shared/components/themed-text";
-import { EmojiPicker } from "@/components/EmojiPicker";
+import { EmojiPicker } from "@shared/components/EmojiPicker";
 import {
   SharePathModal,
   SafetyCheckInModal,
   SafetyModeButtons,
   TrackingBanner,
-} from "@/components/SafetyModeModal";
+} from "@shared/components/SafetyModeModal";
 import {
   InviteModal,
   InviteBanner,
   MessageLimitBanner,
-} from "@/components/InviteModal";
+} from "@shared/components/InviteModal";
 import { useTheme } from "@shared/hooks/useTheme";
 import { useMatches, Message, SafetyFlag, ConnectionIntent } from "@shared/contexts/MatchesContext";
 import { useAuth } from "@shared/contexts/AuthContext";

@@ -15,10 +15,10 @@ import * as Haptics from "expo-haptics";
 import Animated, { FadeIn, FadeInDown } from "react-native-reanimated";
 import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
-import { ScreenKeyboardAwareScrollView } from "@/components/ScreenKeyboardAwareScrollView";
+import { ScreenKeyboardAwareScrollView } from "@shared/components/ScreenKeyboardAwareScrollView";
 import { ThemedText } from "@shared/components/themed-text";
-import { Button } from "@/components/Button";
-import Spacer from "@/components/Spacer";
+import { Button } from "@shared/components/Button";
+import Spacer from "@shared/components/Spacer";
 import { useTheme } from "@shared/hooks/useTheme";
 import { useAuth } from "@shared/contexts/AuthContext";
 import { Spacing, BorderRadius, ElaraColors } from "@shared/constants/theme";

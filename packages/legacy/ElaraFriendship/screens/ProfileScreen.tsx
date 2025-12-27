@@ -5,9 +5,9 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Alert, Platform, Pressable, StyleSheet, Switch, View } from "react-native";
 
-import { LanguageSelector } from "@/components/LanguageSelector";
-import { ScreenScrollView } from "@/components/ScreenScrollView";
-import Spacer from "@/components/Spacer";
+import { LanguageSelector } from "@shared/components/LanguageSelector";
+import { ScreenScrollView } from "@shared/components/ScreenScrollView";
+import Spacer from "@shared/components/Spacer";
 import { BorderRadius, ElaraColors, Spacing } from "@shared/constants/theme";
 import { useAuth } from "@shared/contexts/AuthContext";
 import { useLanguage } from "@shared/contexts/LanguageContext";

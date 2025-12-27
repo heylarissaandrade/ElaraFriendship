@@ -24,7 +24,7 @@ import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
 import { ThemedView } from "@shared/components/themed-view";
 import { ThemedText } from "@shared/components/themed-text";
-import Spacer from "@/components/Spacer";
+import Spacer from "@shared/components/Spacer";
 import { useTheme } from "@shared/hooks/useTheme";
 import { useMatches, Connection } from "@shared/contexts/MatchesContext";
 import { useScreenInsets } from "@shared/hooks/use-screen-insets";

@@ -13,10 +13,10 @@ import { Feather } from "@expo/vector-icons";
 import Animated, { FadeIn, FadeInDown, FadeOut } from "react-native-reanimated";
 import * as Haptics from "expo-haptics";
 
-import { ScreenScrollView } from "@/components/ScreenScrollView";
+import { ScreenScrollView } from "@shared/components/ScreenScrollView";
 import { ThemedText } from "@shared/components/themed-text";
 import { ThemedView } from "@shared/components/themed-view";
-import Spacer from "@/components/Spacer";
+import Spacer from "@shared/components/Spacer";
 import { useTheme } from "@shared/hooks/useTheme";
 import { useAuth } from "@shared/contexts/AuthContext";
 import { Spacing, BorderRadius, ElaraColors } from "@shared/constants/theme";

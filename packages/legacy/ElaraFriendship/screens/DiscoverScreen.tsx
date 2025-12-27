@@ -37,7 +37,7 @@ import { useTheme } from "@shared/hooks/useTheme";
 import { useMatches, UserMatch, HomeHighlight } from "@shared/contexts/MatchesContext";
 import { useAuth } from "@shared/contexts/AuthContext";
 import { Spacing, ElaraColors, BorderRadius } from "@shared/constants/theme";
-import { HomeHighlights, SocialProofBanner } from "@/components/HomeHighlights";
+import { HomeHighlights, SocialProofBanner } from "@shared/components/HomeHighlights";
 
 const SWIPE_THRESHOLD = 100;
 

@@ -2,7 +2,7 @@ import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import DiscoverScreen from "@/screens/DiscoverScreen";
-import { HeaderTitle } from "@/components/HeaderTitle";
+import { HeaderTitle } from "@shared/components/HeaderTitle";
 import { useTheme } from "@shared/hooks/useTheme";
 import { getCommonScreenOptions } from "@shared/navigation/screenOptions";
 

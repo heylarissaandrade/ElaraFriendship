@@ -7,8 +7,8 @@ import Animated, { FadeInDown, FadeInUp } from "react-native-reanimated";
 
 import { ThemedView } from "@shared/components/themed-view";
 import { ThemedText } from "@shared/components/themed-text";
-import { Card } from "@/components/Card";
-import { Button } from "@/components/Button";
+import { Card } from "@shared/components/Card";
+import { Button } from "@shared/components/Button";
 import { useTheme } from "@shared/hooks/useTheme";
 import {
   Spacing,

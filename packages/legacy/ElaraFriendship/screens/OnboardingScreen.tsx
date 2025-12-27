@@ -35,9 +35,9 @@ import Animated, {
 
 import { ThemedText } from "@shared/components/themed-text";
 import { ThemedView } from "@shared/components/themed-view";
-import { PulsingButton } from "@/components/PulsingButton";
-import { AnimatedBackground } from "@/components/AnimatedBackground";
-import Spacer from "@/components/Spacer";
+import { PulsingButton } from "@shared/components/PulsingButton";
+import { AnimatedBackground } from "@shared/components/AnimatedBackground";
+import Spacer from "@shared/components/Spacer";
 import { useTheme } from "@shared/hooks/useTheme";
 import { 
   useAuth, 

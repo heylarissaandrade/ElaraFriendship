@@ -13,10 +13,10 @@ import Animated, { FadeIn, FadeInDown } from "react-native-reanimated";
 import { useNavigation } from "@react-navigation/native";
 import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
-import { ScreenScrollView } from "@/components/ScreenScrollView";
+import { ScreenScrollView } from "@shared/components/ScreenScrollView";
 import { ThemedView } from "@shared/components/themed-view";
 import { ThemedText } from "@shared/components/themed-text";
-import Spacer from "@/components/Spacer";
+import Spacer from "@shared/components/Spacer";
 import { useTheme } from "@shared/hooks/useTheme";
 import { Spacing, BorderRadius, ElaraColors } from "@shared/constants/theme";
 
