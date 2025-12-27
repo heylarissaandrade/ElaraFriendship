@@ -11,11 +11,12 @@ The migration to a packages-based monorepo has been successfully completed in sa
 2. **A2: Move legacy** - Moved `legacy/ElaraFriendship` to `packages/legacy/ElaraFriendship`, updated some imports to `@shared`.
 3. **A3: Extract shared** - Moved theme tokens, hooks, and real components from `app-example` to `packages/shared`.
 4. **Cleanup** - Removed `app-example`, fixed Babel deprecation, updated tsconfig excludes.
+5. **Import updates** - Updated all imports in legacy package to use `@shared/*` paths for constants, hooks, contexts, localization, and navigation.
 
 ### Current structure:
 - `packages/app/` - Ready for future app entry (currently app/ stays at root for compatibility).
-- `packages/legacy/ElaraFriendship/` - Legacy app moved here, with updated imports.
-- `packages/shared/` - Shared theme, hooks, and components (ThemedText, ThemedView, etc.).
+- `packages/legacy/ElaraFriendship/` - Legacy app moved here, with all imports updated to `@shared`.
+- `packages/shared/` - Shared theme, hooks, components, contexts, localization, and navigation.
 
 ### Validation:
 - ✅ TypeScript passes (`npx tsc --noEmit`)
