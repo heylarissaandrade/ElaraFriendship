@@ -10,7 +10,7 @@ module.exports = function (api) {
           root: ["./"],
           alias: {
             "@": "./",
-            "@legacy": "./legacy/ElaraFriendship",
+            "@legacy": "./packages/legacy/ElaraFriendship",
             "@shared": "./packages/shared"
           },
           extensions: [".js", ".jsx", ".ts", ".tsx", ".json"]

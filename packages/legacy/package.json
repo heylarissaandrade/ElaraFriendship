@@ -5,5 +5,11 @@
   "main": "./ElaraFriendship/index.js",
   "scripts": {
     "test": "echo \"No tests\""
+  },
+  "dependencies": {
+    "expo-blur": "~14.0.3",
+    "expo-linear-gradient": "~14.0.2",
+    "expo-location": "~18.0.6",
+    "expo-camera": "~16.0.15"
   }
 }
