@@ -3,7 +3,8 @@
   "compilerOptions": {
     "paths": {
       "@/*": ["./*"],
-      "@legacy/*": ["./legacy/ElaraFriendship/*"]
+      "@legacy/*": ["./legacy/ElaraFriendship/*"],
+      "@shared/*": ["./packages/shared/*"]
     }
   },
   "include": [

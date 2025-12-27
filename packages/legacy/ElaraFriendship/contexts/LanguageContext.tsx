@@ -1,21 +1,21 @@
-import React, {
-  createContext,
-  useContext,
-  useEffect,
-  useMemo,
-  useState,
-  type ReactNode,
+import {
+    createContext,
+    useContext,
+    useEffect,
+    useMemo,
+    useState,
+    type ReactNode,
 } from "react";
 import { useTranslation } from "react-i18next";
 import { ActivityIndicator, I18nManager, StyleSheet, View } from "react-native";
 
-import { ElaraColors } from "@/constants/theme";
 import {
-  changeLanguage,
-  getCurrentLanguage,
-  initI18n,
-  SUPPORTED_LANGUAGES,
+    changeLanguage,
+    getCurrentLanguage,
+    initI18n,
+    SUPPORTED_LANGUAGES,
 } from "@/localization/i18n";
+import { ElaraColors } from "@shared/constants/theme";
 
 type LanguageContextType = {
   currentLanguage: string;
