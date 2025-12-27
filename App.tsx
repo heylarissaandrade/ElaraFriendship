@@ -1,3 +1,3 @@
-import LegacyApp from "@elara/legacy";
+import LegacyApp from "./packages/legacy";
 
 export default LegacyApp;

@@ -2,7 +2,7 @@
   "name": "@elara/legacy",
   "version": "0.0.0",
   "private": true,
-  "main": "./ElaraFriendship/index.js",
+  "main": "./index.ts",
   "scripts": {
     "test": "echo \"No tests\""
   },
