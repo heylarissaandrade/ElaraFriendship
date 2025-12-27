@@ -9,7 +9,7 @@ import { ThemedView } from "@shared/components/themed-view";
 import { ThemedText } from "@shared/components/themed-text";
 import { Card } from "@/components/Card";
 import { Button } from "@/components/Button";
-import { useTheme } from "@/hooks/useTheme";
+import { useTheme } from "@shared/hooks/useTheme";
 import {
   Spacing,
   BorderRadius,
@@ -17,7 +17,7 @@ import {
   Colors,
   Typography,
   Shadows,
-} from "@/constants/theme";
+} from "@shared/constants/theme";
 
 export function DesignShowcaseScreen() {
   const { theme, isDark } = useTheme();

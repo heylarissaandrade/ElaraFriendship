@@ -33,10 +33,10 @@ import { Gesture, GestureDetector } from "react-native-gesture-handler";
 
 import { ThemedView } from "@shared/components/themed-view";
 import { ThemedText } from "@shared/components/themed-text";
-import { useTheme } from "@/hooks/useTheme";
-import { useMatches, UserMatch, HomeHighlight } from "@/contexts/MatchesContext";
-import { useAuth } from "@/contexts/AuthContext";
-import { Spacing, ElaraColors, BorderRadius } from "@/constants/theme";
+import { useTheme } from "@shared/hooks/useTheme";
+import { useMatches, UserMatch, HomeHighlight } from "@shared/contexts/MatchesContext";
+import { useAuth } from "@shared/contexts/AuthContext";
+import { Spacing, ElaraColors, BorderRadius } from "@shared/constants/theme";
 import { HomeHighlights, SocialProofBanner } from "@/components/HomeHighlights";
 
 const SWIPE_THRESHOLD = 100;

@@ -38,7 +38,7 @@ import { ThemedView } from "@shared/components/themed-view";
 import { PulsingButton } from "@/components/PulsingButton";
 import { AnimatedBackground } from "@/components/AnimatedBackground";
 import Spacer from "@/components/Spacer";
-import { useTheme } from "@/hooks/useTheme";
+import { useTheme } from "@shared/hooks/useTheme";
 import { 
   useAuth, 
   UserProfile, 
@@ -49,8 +49,8 @@ import {
   FrequencyPreference,
   PhaseOfLife,
   VerificationStatus
-} from "@/contexts/AuthContext";
-import { Spacing, BorderRadius, ElaraColors, Typography } from "@/constants/theme";
+} from "@shared/contexts/AuthContext";
+import { Spacing, BorderRadius, ElaraColors, Typography } from "@shared/constants/theme";
 
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
 

@@ -28,9 +28,9 @@ import Animated, {
 
 import { ThemedView } from "@shared/components/themed-view";
 import { ThemedText } from "@shared/components/themed-text";
-import { useTheme } from "@/hooks/useTheme";
-import { useMatches, UserMatch } from "@/contexts/MatchesContext";
-import { Spacing, BorderRadius, ElaraColors, Shadows } from "@/constants/theme";
+import { useTheme } from "@shared/hooks/useTheme";
+import { useMatches, UserMatch } from "@shared/contexts/MatchesContext";
+import { Spacing, BorderRadius, ElaraColors, Shadows } from "@shared/constants/theme";
 
 let MapView: any = null;
 let Marker: any = null;

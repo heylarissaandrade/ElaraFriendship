@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 
-import { ShadowsExtended, ThemeExtras } from "@/constants/theme";
+import { ThemeExtras } from "../constants/theme";
 
 export function useTheme() {
   const theme = useMemo(() => ({
@@ -16,5 +16,3 @@ export function useTheme() {
 }
 
 export default useTheme;
-
-export { ShadowsExtended as Shadows };

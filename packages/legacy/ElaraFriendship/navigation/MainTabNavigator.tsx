@@ -8,13 +8,13 @@ import { Platform, StyleSheet, View, Pressable } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { LinearGradient } from "expo-linear-gradient";
 
-import DiscoverStackNavigator from "@/navigation/DiscoverStackNavigator";
-import MapStackNavigator from "@/navigation/MapStackNavigator";
-import ConnectionsStackNavigator from "@/navigation/ConnectionsStackNavigator";
-import ProfileStackNavigator from "@/navigation/ProfileStackNavigator";
-import { useTheme } from "@/hooks/useTheme";
-import { ElaraColors, Spacing, BorderRadius, Shadows, Gradients } from "@/constants/theme";
-import { RootStackParamList } from "@/navigation/RootNavigator";
+import DiscoverStackNavigator from "@shared/navigation/DiscoverStackNavigator";
+import MapStackNavigator from "@shared/navigation/MapStackNavigator";
+import ConnectionsStackNavigator from "@shared/navigation/ConnectionsStackNavigator";
+import ProfileStackNavigator from "@shared/navigation/ProfileStackNavigator";
+import { useTheme } from "@shared/hooks/useTheme";
+import { ElaraColors, Spacing, BorderRadius, Shadows, Gradients } from "@shared/constants/theme";
+import { RootStackParamList } from "@shared/navigation/RootNavigator";
 
 export type MainTabParamList = {
   DiscoverTab: undefined;

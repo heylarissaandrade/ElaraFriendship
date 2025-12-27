@@ -8,11 +8,11 @@ import { Alert, Platform, Pressable, StyleSheet, Switch, View } from "react-nati
 import { LanguageSelector } from "@/components/LanguageSelector";
 import { ScreenScrollView } from "@/components/ScreenScrollView";
 import Spacer from "@/components/Spacer";
-import { BorderRadius, ElaraColors, Spacing } from "@/constants/theme";
-import { useAuth } from "@/contexts/AuthContext";
-import { useLanguage } from "@/contexts/LanguageContext";
-import { useTheme } from "@/hooks/useTheme";
-import type { ProfileStackParamList } from "@/navigation/ProfileStackNavigator";
+import { BorderRadius, ElaraColors, Spacing } from "@shared/constants/theme";
+import { useAuth } from "@shared/contexts/AuthContext";
+import { useLanguage } from "@shared/contexts/LanguageContext";
+import { useTheme } from "@shared/hooks/useTheme";
+import type { ProfileStackParamList } from "@shared/navigation/ProfileStackNavigator";
 import { ThemedText } from "@shared/components/themed-text";
 
 type ProfileScreenProps = {

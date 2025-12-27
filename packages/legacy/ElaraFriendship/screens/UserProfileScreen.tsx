@@ -18,10 +18,10 @@ import { ThemedView } from "@shared/components/themed-view";
 import { ThemedText } from "@shared/components/themed-text";
 import { Button } from "@/components/Button";
 import Spacer from "@/components/Spacer";
-import { useTheme } from "@/hooks/useTheme";
-import { useAuth } from "@/contexts/AuthContext";
-import { Spacing, BorderRadius, ElaraColors } from "@/constants/theme";
-import type { ProfileStackParamList } from "@/navigation/ProfileStackNavigator";
+import { useTheme } from "@shared/hooks/useTheme";
+import { useAuth } from "@shared/contexts/AuthContext";
+import { Spacing, BorderRadius, ElaraColors } from "@shared/constants/theme";
+import type { ProfileStackParamList } from "@shared/navigation/ProfileStackNavigator";
 
 type UserProfileScreenProps = {
   navigation: NativeStackNavigationProp<ProfileStackParamList, "Profile">;

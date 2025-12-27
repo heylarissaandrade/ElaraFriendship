@@ -25,10 +25,10 @@ import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { ThemedView } from "@shared/components/themed-view";
 import { ThemedText } from "@shared/components/themed-text";
 import Spacer from "@/components/Spacer";
-import { useTheme } from "@/hooks/useTheme";
-import { useMatches, Connection } from "@/contexts/MatchesContext";
-import { useScreenInsets } from "@/hooks/useScreenInsets";
-import { Spacing, BorderRadius, ElaraColors, Shadows } from "@/constants/theme";
+import { useTheme } from "@shared/hooks/useTheme";
+import { useMatches, Connection } from "@shared/contexts/MatchesContext";
+import { useScreenInsets } from "@shared/hooks/use-screen-insets";
+import { Spacing, BorderRadius, ElaraColors, Shadows } from "@shared/constants/theme";
 
 type ConnectionsStackParamList = {
   ConnectionsList: undefined;

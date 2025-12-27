@@ -6,8 +6,8 @@ import EditProfileScreen from "@/screens/EditProfileScreen";
 import PrivacySecurityScreen from "@/screens/PrivacySecurityScreen";
 import HelpCenterScreen from "@/screens/HelpCenterScreen";
 import FeedbackScreen from "@/screens/FeedbackScreen";
-import { useTheme } from "@/hooks/useTheme";
-import { getCommonScreenOptions } from "@/navigation/screenOptions";
+import { useTheme } from "@shared/hooks/useTheme";
+import { getCommonScreenOptions } from "@shared/navigation/screenOptions";
 
 export type ProfileStackParamList = {
   Profile: undefined;

@@ -5,10 +5,10 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import ConnectionsScreen from "@/screens/ConnectionsScreen";
 import ChatScreen from "@/screens/ChatScreen";
 import { ThemedText } from "@shared/components/themed-text";
-import { useTheme } from "@/hooks/useTheme";
-import { useMatches } from "@/contexts/MatchesContext";
-import { getCommonScreenOptions } from "@/navigation/screenOptions";
-import { ElaraColors, Spacing } from "@/constants/theme";
+import { useTheme } from "@shared/hooks/useTheme";
+import { useMatches } from "@shared/contexts/MatchesContext";
+import { getCommonScreenOptions } from "@shared/navigation/screenOptions";
+import { ElaraColors, Spacing } from "@shared/constants/theme";
 
 export type ConnectionsStackParamList = {
   ConnectionsList: undefined;

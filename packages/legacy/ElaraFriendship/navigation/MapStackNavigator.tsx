@@ -2,8 +2,8 @@ import React from "react";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import MapScreen from "@/screens/MapScreen";
-import { useTheme } from "@/hooks/useTheme";
-import { getCommonScreenOptions } from "@/navigation/screenOptions";
+import { useTheme } from "@shared/hooks/useTheme";
+import { getCommonScreenOptions } from "@shared/navigation/screenOptions";
 
 export type MapStackParamList = {
   Map: undefined;

@@ -14,7 +14,7 @@ import {
     getCurrentLanguage,
     initI18n,
     SUPPORTED_LANGUAGES,
-} from "@/localization/i18n";
+} from "@shared/localization/i18n";
 import { ElaraColors } from "@shared/constants/theme";
 
 type LanguageContextType = {

@@ -33,10 +33,10 @@ import { ThemedView } from "@shared/components/themed-view";
 import { ThemedText } from "@shared/components/themed-text";
 import { Button } from "@/components/Button";
 import Spacer from "@/components/Spacer";
-import { useTheme } from "@/hooks/useTheme";
-import { useMatches, WalkRequest, WalkParticipant, WalkTag } from "@/contexts/MatchesContext";
-import { useAuth } from "@/contexts/AuthContext";
-import { Spacing, BorderRadius, ElaraColors, Typography } from "@/constants/theme";
+import { useTheme } from "@shared/hooks/useTheme";
+import { useMatches, WalkRequest, WalkParticipant, WalkTag } from "@shared/contexts/MatchesContext";
+import { useAuth } from "@shared/contexts/AuthContext";
+import { Spacing, BorderRadius, ElaraColors, Typography } from "@shared/constants/theme";
 
 import { WalkSegmentedControl } from "@/components/walks/WalkSegmentedControl";
 import { WalkFiltersChips, WalkFilterTag } from "@/components/walks/WalkFiltersChips";

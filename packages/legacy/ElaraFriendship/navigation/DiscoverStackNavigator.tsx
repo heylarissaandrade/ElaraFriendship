@@ -3,8 +3,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import DiscoverScreen from "@/screens/DiscoverScreen";
 import { HeaderTitle } from "@/components/HeaderTitle";
-import { useTheme } from "@/hooks/useTheme";
-import { getCommonScreenOptions } from "@/navigation/screenOptions";
+import { useTheme } from "@shared/hooks/useTheme";
+import { getCommonScreenOptions } from "@shared/navigation/screenOptions";
 
 export type DiscoverStackParamList = {
   Discover: undefined;

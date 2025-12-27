@@ -17,9 +17,9 @@ import { ScreenScrollView } from "@/components/ScreenScrollView";
 import { ThemedText } from "@shared/components/themed-text";
 import { ThemedView } from "@shared/components/themed-view";
 import Spacer from "@/components/Spacer";
-import { useTheme } from "@/hooks/useTheme";
-import { useAuth } from "@/contexts/AuthContext";
-import { Spacing, BorderRadius, ElaraColors } from "@/constants/theme";
+import { useTheme } from "@shared/hooks/useTheme";
+import { useAuth } from "@shared/contexts/AuthContext";
+import { Spacing, BorderRadius, ElaraColors } from "@shared/constants/theme";
 
 const PRIVACY_SECTIONS = [
   {

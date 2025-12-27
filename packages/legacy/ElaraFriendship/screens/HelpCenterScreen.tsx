@@ -17,8 +17,8 @@ import { ScreenScrollView } from "@/components/ScreenScrollView";
 import { ThemedView } from "@shared/components/themed-view";
 import { ThemedText } from "@shared/components/themed-text";
 import Spacer from "@/components/Spacer";
-import { useTheme } from "@/hooks/useTheme";
-import { Spacing, BorderRadius, ElaraColors } from "@/constants/theme";
+import { useTheme } from "@shared/hooks/useTheme";
+import { Spacing, BorderRadius, ElaraColors } from "@shared/constants/theme";
 
 type ProfileStackParamList = {
   Profile: undefined;

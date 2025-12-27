@@ -28,10 +28,10 @@ import {
   InviteBanner,
   MessageLimitBanner,
 } from "@/components/InviteModal";
-import { useTheme } from "@/hooks/useTheme";
-import { useMatches, Message, SafetyFlag, ConnectionIntent } from "@/contexts/MatchesContext";
-import { useAuth } from "@/contexts/AuthContext";
-import { Spacing, BorderRadius, ElaraColors, Typography } from "@/constants/theme";
+import { useTheme } from "@shared/hooks/useTheme";
+import { useMatches, Message, SafetyFlag, ConnectionIntent } from "@shared/contexts/MatchesContext";
+import { useAuth } from "@shared/contexts/AuthContext";
+import { Spacing, BorderRadius, ElaraColors, Typography } from "@shared/constants/theme";
 
 type ConnectionsStackParamList = {
   ConnectionsList: undefined;

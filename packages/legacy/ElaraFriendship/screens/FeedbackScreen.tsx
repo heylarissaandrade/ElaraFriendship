@@ -24,8 +24,8 @@ import { ScreenKeyboardAwareScrollView } from "@/components/ScreenKeyboardAwareS
 import { ThemedText } from "@shared/components/themed-text";
 import { ThemedView } from "@shared/components/themed-view";
 import Spacer from "@/components/Spacer";
-import { useTheme } from "@/hooks/useTheme";
-import { Spacing, BorderRadius, ElaraColors } from "@/constants/theme";
+import { useTheme } from "@shared/hooks/useTheme";
+import { Spacing, BorderRadius, ElaraColors } from "@shared/constants/theme";
 
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 
