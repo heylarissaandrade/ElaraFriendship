@@ -1,0 +1,9 @@
+{
+  "name": "@elara/app",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./app/index.js",
+  "scripts": {
+    "start": "expo start"
+  }
+}
