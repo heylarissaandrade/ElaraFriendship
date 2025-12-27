@@ -16,7 +16,6 @@
   ,
   "exclude": [
     "packages/legacy",
-    "app-example",
     "node_modules",
     "**/*.spec.ts",
     "**/*.test.ts",

@@ -22,8 +22,8 @@ import Animated, {
 } from "react-native-reanimated";
 import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
-import { ThemedView } from "@/components/ThemedView";
-import { ThemedText } from "@/components/ThemedText";
+import { ThemedView } from "@shared/components/themed-view";
+import { ThemedText } from "@shared/components/themed-text";
 import Spacer from "@/components/Spacer";
 import { useTheme } from "@/hooks/useTheme";
 import { useMatches, Connection } from "@/contexts/MatchesContext";

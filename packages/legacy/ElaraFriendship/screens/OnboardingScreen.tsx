@@ -33,8 +33,8 @@ import Animated, {
   ZoomIn,
 } from "react-native-reanimated";
 
-import { ThemedText } from "@/components/ThemedText";
-import { ThemedView } from "@/components/ThemedView";
+import { ThemedText } from "@shared/components/themed-text";
+import { ThemedView } from "@shared/components/themed-view";
 import { PulsingButton } from "@/components/PulsingButton";
 import { AnimatedBackground } from "@/components/AnimatedBackground";
 import Spacer from "@/components/Spacer";

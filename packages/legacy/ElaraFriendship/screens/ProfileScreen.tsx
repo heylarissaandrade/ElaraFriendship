@@ -1,19 +1,19 @@
-import { useState } from "react";
-import { StyleSheet, View, Pressable, Switch, Alert, Platform, Linking } from "react-native";
 import { Feather } from "@expo/vector-icons";
-import * as Haptics from "expo-haptics";
 import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import * as Haptics from "expo-haptics";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Alert, Platform, Pressable, StyleSheet, Switch, View } from "react-native";
 
+import { LanguageSelector } from "@/components/LanguageSelector";
 import { ScreenScrollView } from "@/components/ScreenScrollView";
-import { ThemedText } from "@/components/ThemedText";
-import { useTheme } from "@/hooks/useTheme";
+import Spacer from "@/components/Spacer";
+import { BorderRadius, ElaraColors, Spacing } from "@/constants/theme";
 import { useAuth } from "@/contexts/AuthContext";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Spacing, BorderRadius, ElaraColors } from "@/constants/theme";
-import Spacer from "@/components/Spacer";
-import { LanguageSelector } from "@/components/LanguageSelector";
+import { useTheme } from "@/hooks/useTheme";
 import type { ProfileStackParamList } from "@/navigation/ProfileStackNavigator";
+import { ThemedText } from "@shared/components/themed-text";
 
 type ProfileScreenProps = {
   navigation: NativeStackNavigationProp<ProfileStackParamList, "Profile">;

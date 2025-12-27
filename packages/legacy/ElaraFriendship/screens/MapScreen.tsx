@@ -26,8 +26,8 @@ import Animated, {
   Easing,
 } from "react-native-reanimated";
 
-import { ThemedView } from "@/components/ThemedView";
-import { ThemedText } from "@/components/ThemedText";
+import { ThemedView } from "@shared/components/themed-view";
+import { ThemedText } from "@shared/components/themed-text";
 import { useTheme } from "@/hooks/useTheme";
 import { useMatches, UserMatch } from "@/contexts/MatchesContext";
 import { Spacing, BorderRadius, ElaraColors, Shadows } from "@/constants/theme";

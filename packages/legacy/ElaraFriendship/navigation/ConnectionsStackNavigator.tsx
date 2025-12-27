@@ -4,7 +4,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import ConnectionsScreen from "@/screens/ConnectionsScreen";
 import ChatScreen from "@/screens/ChatScreen";
-import { ThemedText } from "@/components/ThemedText";
+import { ThemedText } from "@shared/components/themed-text";
 import { useTheme } from "@/hooks/useTheme";
 import { useMatches } from "@/contexts/MatchesContext";
 import { getCommonScreenOptions } from "@/navigation/screenOptions";

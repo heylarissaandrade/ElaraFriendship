@@ -16,7 +16,7 @@ import Animated, { FadeIn, FadeInDown } from "react-native-reanimated";
 import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
 import { ScreenKeyboardAwareScrollView } from "@/components/ScreenKeyboardAwareScrollView";
-import { ThemedText } from "@/components/ThemedText";
+import { ThemedText } from "@shared/components/themed-text";
 import { Button } from "@/components/Button";
 import Spacer from "@/components/Spacer";
 import { useTheme } from "@/hooks/useTheme";
