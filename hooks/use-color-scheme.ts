@@ -1,7 +1,2 @@
-import { useColorScheme as rnUseColorScheme } from 'react-native'
-
-export const useColorScheme = () => {
-  return rnUseColorScheme() || 'light'
-}
-
-export default useColorScheme
+export { useColorScheme } from '../packages/shared/hooks/use-color-scheme'
+export { default } from '../packages/shared/hooks/use-color-scheme'
